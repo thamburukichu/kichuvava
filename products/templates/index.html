@@ -1,0 +1,23 @@
+{%extends 'theme.html'%}
+{%block content%}
+<h1><center>KIDS DRESSES<center></h1>
+<div class="container">
+  <div class="row">
+{%for item in products%}
+    <div class="col-md-3">
+      <div class="card">
+  <img class="card-img-top" src="{{item.image}}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{item.name}}</h5>
+    <p class="card-text">${{item.price}}</p>
+    <a href="https://www.google.com/search?q=baby+skirt+and+top&tbm=isch&ved=2ahUKEwiV6N2b3aD7AhWojNgFHTgRA1oQ2-cCegQIABAA&oq&gs_lcp=CgNpbWcQARgEMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnOgQIIxAnOgUIABCABDoECAAQQzoGCAAQBxAeOggIABCABBCxAzoLCAAQgAQQsQMQgwE6CAgAELEDEIMBUPoJWJUlYLBCaAFwAHgAgAFxiAHnCZIBBDEzLjGYAQCgAQGqAQtnd3Mtd2l6LWltZ7ABCsABAQ&sclient=img&ei=IWtrY9XTPKiZ4t4PuKKM0AU&bih=913&biw=1280#imgrc=E28iSKwQnGYAUM" class="btn btn-primary">buy</a>
+  </div>
+</div>
+
+    </div>
+
+{%endfor%}
+    </div>
+  </div>
+
+{%endblock%}
